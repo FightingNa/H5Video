@@ -1,0 +1,38 @@
+body {
+    background-color: silver;/*设置页面背景色为银色*/
+    text-align: center;/*设置页面内容居中显示*/
+}
+/*设置视频播放界面样式*/
+#course {
+    width: 640px;
+    background-color: white;
+    margin: auto;
+    text-align: left;
+    box-shadow: 10px 10px 15px black;
+}
+/*设置列表总样式*/
+ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: -10px;
+}
+/*设置课程标题样式*/
+h3 {
+    text-align: center;
+}
+/*设置课程大纲目录样式*/
+li span {
+    line-height: 40px;
+    height: 40px;
+    padding: 0;
+}
+/*设置鼠标悬浮于列表选项时的样式*/
+li:hover {
+    color: red;
+}
+/*设置图标样式*/
+img {
+    vertical-align: bottom;
+    width: 40px;
+    height: 40px;
+}

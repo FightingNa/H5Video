@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>视频--欧洲简史</title>
+        <link rel="stylesheet" href="css/course.css">
+    </head>
+    <body>
+        <div id="course">
+            <!--创建视频播放窗口-->
+            <video id="screen" width="640" src="video/art.mp4" controls autoplay>
+                对不起，您的浏览器不支持HTML5视频。
+            </video>
+            <!--课程大纲列表-->
+            <ul>
+                <li>
+                    <!--课程标题-->
+                    <h3>欧洲简史</h3>
+                </li>
+                <!--水平线-->
+                <hr />
+                <li onclick="playCourse(60)">
+                    <img src="image/course/play.png" />
+                    <span>早期基督美术建筑</span>
+                </li>
+                <hr />
+                <li onclick="playCourse(120)">
+                    <img src="image/course/play.png" />
+                    <span>早期基督美术之绘画</span>
+                </li>
+                <!--水平线-->
+                <hr />
+                <li onclick="playCourse(220)">
+                    <img src="image/course/play.png" />
+                    <span>早期基督美术之绘画：拜占庭美术</span>
+                </li>
+                <!--水平线-->
+                <hr />
+                <li onclick="playCourse(320)">
+                    <img src="image/course/play.png" />
+                    <span>早期基督美术之绘画：镶嵌画</span>
+                </li>
+                <!--水平线-->
+                <hr />
+                <li onclick="playCourse(420)">
+                    <img src="image/course/play.png" />
+                    <span>早期基督美术之绘画：罗马式美术</span>
+                </li>
+            </ul>
+        </div>
+        <script>
+            //获取video对象
+            var screen = document.getElementById("screen");
+
+            //跳转播放时间
+            function playCourse(time) {
+                //重置当前播放时间
+                screen.currentTime = time;
+                //继续播放视频
+                screen.play();
+            }
+        </script>
+    </body>
+</html>
